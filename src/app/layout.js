@@ -12,18 +12,8 @@ export const metadata = {
   description: "Customisable application framework for WSI",
 };
 
-async function getUserSession() {
-  const session = await getServerSession();
-  if (!session) {
-    console.log("no user session");
-    return null;
-  }
-  console.log(session)
-  return session
-}
-
 export default async function RootLayout({ children }) {
-  const session = await getUserSession();
+  const session = await getServerSession();
   return (
     <html lang="en">
       <body className={inter.className}>
