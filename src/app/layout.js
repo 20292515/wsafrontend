@@ -18,6 +18,7 @@ async function getUserSession() {
     console.log("no user session");
     return null;
   }
+  console.log(session)
   return session
 }
 
