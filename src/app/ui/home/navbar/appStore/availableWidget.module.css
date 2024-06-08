@@ -1,0 +1,14 @@
+.available {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 90%;
+}

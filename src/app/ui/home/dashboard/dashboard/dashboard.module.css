@@ -1,0 +1,17 @@
+.dashboard {
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+   .dashboard {
+      flex-direction: column;
+      flex-flow: column-reverse;
+   }
+
+   .desktopNav {
+      display: none;
+   }
+   
+}

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.normal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.normalLogin {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+.widgetView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}

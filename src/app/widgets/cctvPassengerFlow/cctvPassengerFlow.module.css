@@ -1,0 +1,19 @@
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .statistics {
+        flex-direction: column;
+    }
+    
+}

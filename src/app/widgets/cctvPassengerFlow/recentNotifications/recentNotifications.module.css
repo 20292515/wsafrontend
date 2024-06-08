@@ -1,0 +1,21 @@
+.notification {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
+.notificationsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 98%;
+}

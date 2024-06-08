@@ -1,0 +1,27 @@
+.fullscreenNav {
+    padding: 1em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreenBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .fullscreenBody {
+        align-items: normal;
+    }
+    
+}

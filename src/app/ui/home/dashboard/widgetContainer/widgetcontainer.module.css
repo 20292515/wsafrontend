@@ -1,0 +1,28 @@
+.widgetContainer {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1rem;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #ccc;
+
+}
+
+@media screen and (max-width: 1024px){
+    .widgetContainer {
+        display: none;
+    }
+    
+}
