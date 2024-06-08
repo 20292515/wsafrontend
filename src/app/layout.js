@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { getServerSession } from 'next-auth';
-import SessionProvider from "@/app/SessionProvider";
+import ProviderWrapper from "@/app/ProviderWrapper"
 
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
@@ -17,9 +17,9 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SessionProvider session={session}>
+        <ProviderWrapper session={session}>
         {children}
-        </SessionProvider>
+        </ProviderWrapper>
       </body>
     </html>
   );
